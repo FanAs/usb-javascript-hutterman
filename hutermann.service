@@ -1,0 +1,18 @@
+[Unit]
+Description=Hutermann
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/smarthome/hutermann/
+Environment=
+User=pi
+Group=pi
+ExecStart=node app.js
+RestartSec=10
+TimeoutStartSec=15
+TimeoutStopSec=30
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

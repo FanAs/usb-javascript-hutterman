@@ -1,0 +1,10 @@
+{
+  "name": "usb-co",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^3.0.0",
+    "node-hid": "^1.2.0"
+  }
+}
